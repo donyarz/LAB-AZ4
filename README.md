@@ -1,5 +1,113 @@
 # LAB-AZ4
 
+## تبدیل نیازمندی ها به موارد آزمون با استفاده از روش ایجاد مبتنی بر رفتار(BDD)
+<br>
+
+در ادامه مراحل انجام کار در intellig را آورده ام.
+<br>
+
+مرحله 1: ایجاد پروژه جدید Maven:
+
+![Screenshot (135)](https://github.com/user-attachments/assets/f90f8901-905a-42d5-b185-73e820c89978)
+![Screenshot (136)](https://github.com/user-attachments/assets/24cc7de1-849c-4200-addc-05a25963bc01)
+![Screenshot (137)](https://github.com/user-attachments/assets/411e4a2f-7caa-488a-b656-cceb931139ac)
+<br>
+
+
+
+مرحله دوم: سپس باید depedency های مورد نیاز برای Junit , Cucumber را به pom.xml بیافزاییم:
+<br>
+
+<dependencies>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>1.2.5</version>
+    </dependency>
+
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>1.2.5</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+
+![Screenshot (138)](https://github.com/user-attachments/assets/e237cb13-5958-445e-aa70-5aa967881463)
+<br>
+
+
+مرحله 3 : Maven > test را اجرا می‌کنیم تا پیغام Build successfull را ببینیم:
+
+
+
+
+
+![Screenshot (141)](https://github.com/user-attachments/assets/8f781aad-64e5-4335-8bd1-e17c6b0b994d)
+
+
+<br>
+
+
+مرحله 4 : ایجاد یک پکیج resousre در پکیج test و انتخاب Mark Directory as Test Resourse Root
+
+
+![Screenshot (142)](https://github.com/user-attachments/assets/d37713c6-a739-45c6-a294-c7477ee6be75)
+
+
+![Screenshot (143)](https://github.com/user-attachments/assets/8d2740f1-6029-4686-a8cc-14c81d2908e9)
+
+![Screenshot (144)](https://github.com/user-attachments/assets/5dfdc18e-e0a1-406c-a8b6-e3f97a91fd02)
+
+<br>
+
+مرحله 5:ایجاد پکیج جدید به نام Calculator در مسیر src > main > java و ایجاد دایرکتوری جدید به نام features در مسیر test > resourses
+
+
+![Screenshot (145)](https://github.com/user-attachments/assets/f85318dd-0d55-4f57-8881-76b450283847)
+
+
+![Screenshot (146)](https://github.com/user-attachments/assets/9b495923-2a6e-417c-801e-d1c072c44d0f)
+
+
+![Screenshot (147)](https://github.com/user-attachments/assets/aa1b1b24-7e10-44a9-ade3-077ba408c9f5)
+
+<br>
+
+مرحله 6: ایجاد فایل جدید با عنوان calculator.feature در زیر دایرکتوری feature و نوشتن سناریو جذر تقسیم در آن:
+<br>
+خطوط زیر به عنوان سناریو در این فایل نوشته شده است:
+<br>
+
+
+
+![image](https://github.com/user-attachments/assets/455b21be-7698-4def-b593-83d12fd2cf34)
+
+
+![Screenshot (149)](https://github.com/user-attachments/assets/5a4726a5-91e4-4ed1-9270-200db9963117)
+
+<br>
+
+مشحص است که خطوط زرد رنگ شده است که یعنی نمیتواند آنها را تفسیر کند. باید به انتهای هر کدام از خطوط رفته و  Alt + Enter تا یک فایل جدید جهت ایجاد step ها و سناریو ایجاد گردد.
+
+
+
+![Screenshot (150)](https://github.com/user-attachments/assets/ee777bf0-0e1a-4857-81b3-2dc73f8bdc3a)
+
+
+![Screenshot (153)](https://github.com/user-attachments/assets/418e4a58-98a7-4890-8e9b-342ea47b0d47)
+
+
+![Screenshot (154)](https://github.com/user-attachments/assets/562f9510-bfac-40b1-92da-16271e4d70a1)
+
 ## پروفایلینگ بر روی کلاس جاواکاپ
 
 در ابتدا همانطور که از ما خواسته شد با استفاده از YourKit عملیات پروفایلینگ را بر روی کلاس JavaCup اجرا کردیم و تابعی که بیشترین مصرف منابع را دارد را شناسایی کردیم که تابع temp بود. <br>
