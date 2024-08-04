@@ -107,6 +107,41 @@
 
 
 ![Screenshot (154)](https://github.com/user-attachments/assets/562f9510-bfac-40b1-92da-16271e4d70a1)
+<br>
+<br>
+
+مرحله 7: حال باید بدنه این متد ها طوریکه نیاز است کامل شود که به صورت زیر کامل میکنیم:
+
+![image](https://github.com/user-attachments/assets/9651e5b2-83c1-4b17-b104-22397b371d9f)
+
+<br>
+
+حال باید کلاس Calculator را هم در پکیج calculator ایجاد کنیم:
+
+![image](https://github.com/user-attachments/assets/004c67d6-9c0a-45d7-ab41-b1cfaa043f0e)
+
+<br>
+
+سپس Maven Test را میزنیم که به ارور میخوریم، برای رفغ ارور نسخه بالاتر Maven را در pom.xl اضافه میکنیم:
+<br>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+![image](https://github.com/user-attachments/assets/6ac58e0e-d8bc-423d-a274-404635c81049)
+
+<br>
+حال مجددا Maven Test را میزنیم تا پیام Success را ببینیم:
+
+![Screenshot (161)](https://github.com/user-attachments/assets/9558e82e-b8c3-4192-8c0f-b233442be5ff)
+
+
+
+
+
+
 
 ## پروفایلینگ بر روی کلاس جاواکاپ
 
