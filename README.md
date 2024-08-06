@@ -1,5 +1,7 @@
 # LAB-AZ4
 
+** پروژه Profilig روی برنچ main هست و پروژه BDD روی BDD-SQRT هست.
+
 ## تبدیل نیازمندی ها به موارد آزمون با استفاده از روش ایجاد مبتنی بر رفتار(BDD)
 <br>
 
@@ -137,8 +139,50 @@
 
 ![Screenshot (161)](https://github.com/user-attachments/assets/9558e82e-b8c3-4192-8c0f-b233442be5ff)
 
+مرحله 8: حال در این مرحله با کلیک کردن بر روی calculator.feature و زدن گزینه ران اجرا شدن سناریو را میبینیم:
 
 
+![image](https://github.com/user-attachments/assets/01cf7d1d-0bd2-4b62-aa13-4b75c80fe2bf)
+
+مرحله 9: برای مشاهده جزئیات از طریق Juit ابتدا یک کلاس جدید به نام RunnerTest.java میسازیم:
+
+![image](https://github.com/user-attachments/assets/3bd4e206-11b0-459a-a362-6ac9b7d724a9)
+
+سپس بدنه آنرا به شکل گفته شده در پی دی اف مینویسیم:
+![image](https://github.com/user-attachments/assets/494cc0b3-a25e-4d1d-b142-015e44f64f9b)
+
+با اجرا به یک خطا میخوریم:
+
+
+
+![image](https://github.com/user-attachments/assets/e2cf1731-a61d-4c5c-bb75-2d47c4c200b3)
+
+این خطا به این دلیل است که نمیتواند مسیر فایل را پیدا کند، اصلاح کد و اضافه کردن مسیر:
+
+
+![image](https://github.com/user-attachments/assets/52f8231d-e64d-4b00-aaac-b64a958eb37a)
+
+مرحله 10: زدن مجدد تست و پاس شدن همه تست ها:
+
+
+![image](https://github.com/user-attachments/assets/6b0df98d-3a53-4372-8a3c-7390f763e44c)
+
+مرحله 11: با تغییر مقادیر fature ، تغییر مقداری که به عنوان خروجی انتظار داشتیم و ران مجدد کلاس RunnerTest که منجر به فیل شدن سناریوی تغییر یافته شد (سناریوی دوم):
+
+
+![image](https://github.com/user-attachments/assets/21b5ee57-6182-4826-bc87-c00d0f2b13a3)
+
+تست‌هایی که نوشه شد علت فیل شدنشون یا تقسیم بر صفر هست یا استفاده از عدد منفی:
+![image](https://github.com/user-attachments/assets/9294328b-8490-42d1-9e31-3caa660148e2)
+
+اضافه کردن تست های جدید و ارورهای متوالی:
+
+
+![image](https://github.com/user-attachments/assets/4d626434-8511-4624-9104-f927ca4a831d)
+
+برای درست کردن هم متدها و regexها را قوی تر کردیم که تشخیص بدن این موارد رو که مشخص است بعد از آن کامل درست شده است:
+
+![image](https://github.com/user-attachments/assets/ebadeebe-6f75-40b1-8986-0207fff68fe7)
 
 
 
